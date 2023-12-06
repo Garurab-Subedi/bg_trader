@@ -1,11 +1,11 @@
 class TImage {
   // App logos
-  static const String darkAppLogo = "assets/";
-  static const String lightAppLogo = "assets/";
+  static const String darkAppLogo = "assets/logos/logo1.png";
+  static const String lightAppLogo = "assets/logos/logo1.png";
 
   // social logos
-  static const String google = "assets/";
-  static const String facebook = "assets/";
+  static const String google = "assets/logos/google.png";
+  static const String facebook = "assets/logos/facebook.png";
 
   //-- OnBaroding Scereen
   static const String onBoardingImage1 = "assets/onboarding/onBoarding-1.png";
