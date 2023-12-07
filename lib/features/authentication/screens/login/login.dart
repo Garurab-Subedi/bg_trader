@@ -1,4 +1,6 @@
 import 'package:bg_trader/common/styles/spacing_styles.dart';
+import 'package:bg_trader/features/authentication/screens/login/widgets/loginform_widget.dart';
+import 'package:bg_trader/features/authentication/screens/login/widgets/loginheader_widget.dart';
 import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/constants/image_strings.dart';
 import 'package:bg_trader/utils/constants/sizes.dart';
@@ -6,7 +8,6 @@ import 'package:bg_trader/utils/constants/text_strings.dart';
 import 'package:bg_trader/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -21,100 +22,10 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               /// Logo, title and subtitle
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image(
-                    height: 150,
-                    image: AssetImage(
-                        dark ? TImage.lightAppLogo : TImage.darkAppLogo),
-                  ),
-                  Text(
-                    TTexts.loginTitle,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                  const SizedBox(
-                    height: TSize.sm,
-                  ),
-                  Text(
-                    TTexts.loginSubTitle,
-                    style: Theme.of(context).textTheme.headlineSmall,
-                  ),
-                ],
-              ),
+              TLoginHeader(dark: dark),
 
               //// Form
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: TSize.spaceBtwSections),
-                child: Form(
-                  child: Column(
-                    children: [
-                      // Email
-                      TextFormField(
-                        decoration: const InputDecoration(
-                            prefixIcon: Icon(Iconsax.direct_right),
-                            labelText: TTexts.email),
-                      ),
-                      const SizedBox(
-                        height: TSize.spaceBtwInputFields,
-                      ),
-
-                      /// Pasword
-                      TextFormField(
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Iconsax.direct_right),
-                          labelText: TTexts.password,
-                          suffixIcon: Icon(Iconsax.eye_slash),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: TSize.spaceBtwInputFields / 2,
-                      ),
-
-                      /// Remeber Me $ Forget Password
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          /// -- Rember Me
-                          Row(
-                            children: [
-                              Checkbox(value: true, onChanged: (value) {}),
-                              const Text(TTexts.rememberMe)
-                            ],
-                          ),
-
-                          /// -- Forget Passworord
-                          TextButton(
-                              onPressed: () {},
-                              child: const Text(TTexts.forgetPassword))
-                        ],
-                      ),
-                      const SizedBox(
-                        height: TSize.spaceBtwSections,
-                      ),
-
-                      /// -- Sign In button
-                      SizedBox(
-                          width: double.infinity,
-                          child: ElevatedButton(
-                              onPressed: () {},
-                              child: const Text(TTexts.signIn))),
-
-                      const SizedBox(
-                        height: TSize.spaceBtwItems,
-                      ),
-
-                      /// -- Create account button
-                      SizedBox(
-                          width: double.infinity,
-                          child: OutlinedButton(
-                              onPressed: () {},
-                              child: const Text(TTexts.createAccount))),
-                    ],
-                  ),
-                ),
-              ),
+              const TLoginForm(),
 
               /// -- Divider
               Row(
@@ -147,6 +58,7 @@ class LoginScreen extends StatelessWidget {
 
               /// -- Footer
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     decoration: BoxDecoration(

@@ -24,7 +24,7 @@ class TTexts {
 
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
-  static const String email = "First Name";
+  static const String email = "Email Address";
   static const String password = "Password";
   static const String newPassword = "New Password";
   static const String username = "username";
@@ -41,6 +41,7 @@ class TTexts {
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend Email in";
   static const String termsOfUse = "Terms of Use";
+  static const String and = "and";
 
   // -- Authentication Heading text
   static const String loginTitle = "Welcome back";

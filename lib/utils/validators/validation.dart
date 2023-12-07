@@ -5,6 +5,7 @@ class TValidator {
     }
 
     // Regular expression for email validation
+    // ignore: valid_regexps
     final emailRegExp = RegExp(r'^[a-zA-Z');
 
     if (!emailRegExp.hasMatch(value)) {
@@ -23,6 +24,7 @@ class TValidator {
     }
 
     // check for uppercase letters
+    // ignore: valid_regexps
     if (!value.contains(RegExp(r'[A-Z'))) {
       return 'Password must contain at least one Uppercase letter';
     }

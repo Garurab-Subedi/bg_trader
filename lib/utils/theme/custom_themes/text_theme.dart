@@ -21,7 +21,7 @@ class TTextTheme {
     bodyMedium: const TextStyle().copyWith(
         fontSize: 14.0, fontWeight: FontWeight.w600, color: Colors.black),
     bodySmall: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w600, color: Colors.black),
+        fontSize: 12.0, fontWeight: FontWeight.w600, color: Colors.black),
     labelLarge: const TextStyle().copyWith(
         fontSize: 12.0, fontWeight: FontWeight.normal, color: Colors.black),
     labelMedium: const TextStyle().copyWith(
@@ -48,7 +48,7 @@ class TTextTheme {
     bodyMedium: const TextStyle().copyWith(
         fontSize: 14.0, fontWeight: FontWeight.w600, color: Colors.white),
     bodySmall: const TextStyle().copyWith(
-        fontSize: 14.0, fontWeight: FontWeight.w600, color: Colors.white),
+        fontSize: 12.0, fontWeight: FontWeight.w600, color: Colors.white),
     labelLarge: const TextStyle().copyWith(
         fontSize: 12.0, fontWeight: FontWeight.normal, color: Colors.white),
     labelMedium: const TextStyle().copyWith(
