@@ -1,3 +1,4 @@
+import 'package:bg_trader/features/authentication/screens/signup/verify_email.dart';
 import 'package:bg_trader/features/authentication/screens/signup/widgets/termsandContion.dart';
 import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/constants/image_strings.dart';
@@ -106,7 +107,7 @@ class SignUpScreen extends StatelessWidget {
                       width: double.infinity,
                       child: ElevatedButton(
                           onPressed: () {
-                            // Get.to(() => );
+                            Get.to(() => const VerifyEmailScreen());
                           },
                           child: const Text(TTexts.createAccount))),
 
