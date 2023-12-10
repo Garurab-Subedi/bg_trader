@@ -1,3 +1,4 @@
+import 'package:bg_trader/features/authentication/screens/password_configuration/forget_password.dart';
 
 import 'package:bg_trader/features/authentication/screens/signup/signup.dart';
 import 'package:bg_trader/utils/constants/sizes.dart';
@@ -54,7 +55,8 @@ class TLoginForm extends StatelessWidget {
 
                 /// -- Forget Passworord
                 TextButton(
-                    onPressed: () {}, child: const Text(TTexts.forgetPassword))
+                    onPressed: () => Get.to(() => const ForgetPasswordScreen()),
+                    child: const Text(TTexts.forgetPassword))
               ],
             ),
             const SizedBox(

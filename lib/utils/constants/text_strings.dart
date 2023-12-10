@@ -42,6 +42,7 @@ class TTexts {
   static const String resendEmailIn = "Resend Email in";
   static const String termsOfUse = "Terms of Use";
   static const String and = "and";
+  static const String done = "Done";
 
   // -- Authentication Heading text
   static const String loginTitle = "Welcome back";
