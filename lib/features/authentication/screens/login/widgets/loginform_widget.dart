@@ -1,6 +1,7 @@
 import 'package:bg_trader/features/authentication/screens/password_configuration/forget_password.dart';
 
 import 'package:bg_trader/features/authentication/screens/signup/signup.dart';
+import 'package:bg_trader/navigation.dart';
 import 'package:bg_trader/utils/constants/sizes.dart';
 import 'package:bg_trader/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +69,7 @@ class TLoginForm extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      // Get.to(() => );
+                      Get.to(() => const NavigationMenu());
                     },
                     child: const Text(TTexts.signIn))),
 
