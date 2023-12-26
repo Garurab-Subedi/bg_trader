@@ -1,3 +1,4 @@
+import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class TSectionHeading extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .headlineSmall!
-                    .apply(color: textColor),
+                    .apply(color: TColors.white),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis),
             if (showActionButton)
