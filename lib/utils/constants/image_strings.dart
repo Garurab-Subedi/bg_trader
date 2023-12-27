@@ -19,4 +19,10 @@ class TImage {
   static const String category1 = "assets/category/electronics.png";
   static const String category2 = "assets/category/homeapplinace.png";
   static const String category3 = "assets/category/homedecoreandfurniture.png";
+
+
+  // Banner
+  static const String banner1 = "assets/banner/banner1.png";
+  static const String banner2 = "assets/banner/banner2.png";
+  static const String banner3 = "assets/banner/home appliances.jpg";
 }
