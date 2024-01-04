@@ -1,5 +1,5 @@
 import 'package:bg_trader/common/widgets/appbar/appbar.dart';
-import 'package:bg_trader/common/widgets/productscart/cart_menu_icon.dart';
+import 'package:bg_trader/common/widgets/productscart/cart/cart_menu_icon.dart';
 import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

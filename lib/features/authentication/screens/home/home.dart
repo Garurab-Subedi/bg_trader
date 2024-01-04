@@ -1,5 +1,7 @@
 import 'package:bg_trader/common/widgets/custom_shapes/container/primary_container.dart';
 import 'package:bg_trader/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:bg_trader/common/widgets/layouts/grid_layout.dart';
+import 'package:bg_trader/common/widgets/productscart/product_cards/product_card_vertical.dart';
 import 'package:bg_trader/common/widgets/text/section_heading.dart';
 import 'package:bg_trader/features/authentication/screens/home/widgets/BannerSlider_widget.dart';
 
@@ -62,12 +64,24 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             // Body
-            const Padding(
-              padding: EdgeInsets.all(TSize.defaultSpace),
-              child: THomePromoSlider(
-                banners: [TImage.banner1, TImage.banner2, TImage.banner3],
+            Padding(
+              padding: const EdgeInsets.all(TSize.defaultSpace),
+              child: Column(
+                children: [
+                  // -- Promo slider
+                  const THomePromoSlider(
+                    banners: [TImage.banner1, TImage.banner2, TImage.banner3],
+                  ),
+                  const SizedBox(height: TSize.spaceBtwSections),
+
+                  // -- Pupular Products
+                  TGridView(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  ),
+                ],
               ),
-            )
+            ),
           ],
         ),
       ),

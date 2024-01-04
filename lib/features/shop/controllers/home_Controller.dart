@@ -9,3 +9,4 @@ class HomeController extends GetxController {
     carousalCurrentIndex.value = index;
   }
 }
+

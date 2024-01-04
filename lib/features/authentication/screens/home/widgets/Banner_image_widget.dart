@@ -1,4 +1,3 @@
-
 import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';

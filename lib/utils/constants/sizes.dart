@@ -35,9 +35,9 @@ class TSize {
   static const double spaceBtwSections = 32.0;
 
   // Border Radius
-  static const double borderRadousSm = 4.0;
-  static const double borderRadousMd = 4.0;
-  static const double borderRadousLg = 4.0;
+  static const double borderRadiusSm = 4.0;
+  static const double borderRadiusMd = 4.0;
+  static const double borderRadiusLg = 4.0;
 
   // Divider height
   static const double dividerHeight = 1.0;
