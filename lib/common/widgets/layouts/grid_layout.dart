@@ -5,7 +5,7 @@ class TGridView extends StatelessWidget {
   const TGridView({
     super.key,
     required this.itemCount,
-    this.mainAxisExtent = 275,
+    this.mainAxisExtent = 288,
     required this.itemBuilder,
   });
 

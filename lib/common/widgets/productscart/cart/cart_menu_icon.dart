@@ -9,7 +9,7 @@ class TCartConterIcon extends StatelessWidget {
     required this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override

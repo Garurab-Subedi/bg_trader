@@ -1,4 +1,5 @@
 import 'package:bg_trader/features/authentication/screens/home/home.dart';
+import 'package:bg_trader/features/shop/screens/store/store.dart';
 import 'package:bg_trader/utils/constants/color.dart';
 import 'package:bg_trader/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -53,9 +54,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(
-      color: Colors.blue,
-    ),
+    const StoreScreen(),
     Container(
       color: Colors.red,
     ),

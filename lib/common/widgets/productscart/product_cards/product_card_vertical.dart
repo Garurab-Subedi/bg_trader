@@ -39,6 +39,7 @@ class TProductCardVertical extends StatelessWidget {
                   const TBannerImage(
                     imageUrl: TImage.product1,
                     applyImageRadius: true,
+                    fit: BoxFit.cover,
                   ),
 
                   //sale tag
@@ -96,33 +97,39 @@ class TProductCardVertical extends StatelessWidget {
                             color: TColors.primary, size: TSize.iconxs)
                       ],
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        // -- Price
-                        Text(
-                          'Rs.980',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.headlineMedium,
-                        ),
-                        Container(
-                          decoration: const BoxDecoration(
-                              color: TColors.dark,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(TSize.cardRadiusMd),
-                                bottomRight:
-                                    Radius.circular(TSize.productImageRadius),
-                              )),
-                          child: const SizedBox(
-                              width: TSize.iconlg * 1.2,
-                              height: TSize.iconlg * 1.2,
-                              child: Icon(Iconsax.add, color: TColors.white)),
-                        )
-                      ],
-                    )
                   ],
-                ))
+                )),
+
+            const Spacer(),
+
+            // --Price row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // -- Price
+                Padding(
+                  padding: const EdgeInsets.only(left: TSize.sm),
+                  child: Text(
+                    'Rs.980',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                      color: TColors.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(TSize.cardRadiusMd),
+                        bottomRight: Radius.circular(TSize.productImageRadius),
+                      )),
+                  child: const SizedBox(
+                      width: TSize.iconlg * 1.2,
+                      height: TSize.iconlg * 1.2,
+                      child: Icon(Iconsax.add, color: TColors.white)),
+                )
+              ],
+            )
           ],
         ),
       ),

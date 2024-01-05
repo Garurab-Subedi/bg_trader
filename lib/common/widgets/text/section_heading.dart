@@ -19,23 +19,21 @@ class TSectionHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: TSize.defaultSpace),
-      child: Column(children: [
-        Row(
-          children: [
-            Text('Popular Categories',
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .apply(color: TColors.white),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis),
-            if (showActionButton)
-              TextButton(onPressed: onPressed, child: Text(buttonTitle))
-          ],
-        )
-      ]),
-    );
+    return Column(children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .headlineSmall!
+                  .apply(color: textColor),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis),
+          if (showActionButton)
+            TextButton(onPressed: onPressed, child: Text(buttonTitle))
+        ],
+      )
+    ]);
   }
 }
